@@ -1,5 +1,5 @@
 //Krystal E. Hernandez Ayala kryshernandez05 801-23-8929
-//referencias: Powerpoint capitulo 3
+//referencias: Powerpoint capitulo 3, https://cplusplus.com/forum/beginner/60551/
 
 #include <iostream>
 #include <iomanip>
@@ -25,9 +25,15 @@ int main(){
     cin >> childTicket;
 
     //calculos (gross, net profit, payed)
+    double gross, net, distributor, adultPrice = 10.00, childPrice = 6.00;
 
+    gross = (adultTicket * adultPrice) + (childTicket * childPrice);
+    net = gross * 0.20;
+    distributor = gross - net;
 
     //display 
+    cout << "Movie name: \"" << movieName << "\"" << endl;
+    
 
     return 0;
 
