@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 int main(){
@@ -11,7 +12,17 @@ int main(){
     cout << "This program calculates the gross box office profit, the net box office profit, \nand the distributor's profit for a movie showing" << endl;
 
     //nombre de pelicula y tickets vendidos input
+    int adultTicket, childTicket;
+    string movieName;
 
+    cout << "\nMovie name: ";
+    getline(cin, movieName);
+
+    cout << "Adult tickets sold: ";
+    cin >> adultTicket;
+
+    cout << "Child tickets sold: ";
+    cin >> childTicket;
 
     //calculos (gross, net profit, payed)
 
