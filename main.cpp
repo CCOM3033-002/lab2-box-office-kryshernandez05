@@ -34,10 +34,12 @@ int main(){
     //display 
     cout << "\n\t\t<<<< Results >>>>" << endl;
     cout << setprecision(2) << fixed << endl;
-    cout << "\nMovie name: \t\t\"" << movieName << "\"" << endl;
-    cout << "Gross profi: \t\t" << "$ " << fixed << gross << endl;
-    cout << "Net profit: \t\t" << "$ " << fixed << net << endl;
-    cout << "Distributor's profit: \t\t" << "$ " << distributor << endl; 
+    cout << "Movie name:                  " << "\"" << movieName << "\"" << endl;
+    cout << "Adult Tickets Sold:          " << setw(8) << adultTicket << endl;
+    cout << "Child Tickets Sold:          " << setw(8) << childTicket << endl;
+    cout << "Gross Box Office Profit:     " << "$ " << setw(8) << gross << endl;
+    cout << "Net Box Office Profit:       " << "$ " << setw(8) << net << endl;
+    cout << "Amount Paid to Distributor:  " << "$ " << setw(8) << distributor << endl; 
 
     return 0;
 
