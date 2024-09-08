@@ -32,8 +32,12 @@ int main(){
     distributor = gross - net;
 
     //display 
-    cout << "Movie name: \"" << movieName << "\"" << endl;
-    
+    cout << "\n\t\t<<<< Results >>>>" << endl;
+    cout << setprecision(2) << fixed << endl;
+    cout << "\nMovie name: \t\t\"" << movieName << "\"" << endl;
+    cout << "Gross profi: \t\t" << "$ " << fixed << gross << endl;
+    cout << "Net profit: \t\t" << "$ " << fixed << net << endl;
+    cout << "Distributor's profit: \t\t" << "$ " << distributor << endl; 
 
     return 0;
 
